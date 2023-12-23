@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Outfit"
+    />
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: hsl(212, 45%, 89%);
+        font-size: 15px;
+        font-family: "Outfit", sans-serif;
+      }
+      .card {
+        max-width: 350px;
+        background-color: hsl(0, 0%, 100%);
+        border: 1px solid hsl(0, 0%, 100%);
+        margin: 22vh auto;
+        height: 56vh;
+        border-radius: 20px;
+      }
+
+      .qr-image {
+        margin: 5% 5% 0 5%;
+        width: 315px;
+        height: 315px;
+        border-radius: 20px;
+      }
+      .texts {
+        display: flex;
+        margin: 0 12%;
+        flex-direction: column;
+        /* justify-content: center; */
+      }
+      .caption {
+        display: flex;
+        font-size: 24px;
+        font-weight: 700;
+        margin-top: 10px;
+      }
+
+      .para {
+        display: flex;
+        font-weight: 400;
+        font-size: 16px;
+        width: 100%;
+        margin-top: -4%;
+        justify-content: center;
+        text-align: center;
+        color: hsl(212, 45%, 89%);
+      }
+      .text-mid {
+        display: flex;
+        font-weight: 400;
+        font-size: 16px;
+        width: 100%;
+        margin-top: -6%;
+        justify-content: center;
+        text-align: center;
+        color: hsl(212, 45%, 89%);
+      }
+
+      @media (max-width: 380px) {
+        .card {
+          max-width: 325px;
+          background-color: hsl(0, 0%, 100%);
+          border: 1px solid hsl(0, 0%, 100%);
+          margin: 20vh auto;
+          height: 60vh;
+          border-radius: 20px;
+        }
+        .qr-image {
+          margin: 5% 5% 0 5%;
+          width: 295px;
+          height: 295px;
+          border-radius: 20px;
+        }
+
+        .texts {
+          display: flex;
+          margin: 25px 10%;
+          flex-direction: column;
+          /* justify-content: center; */
+        }
+
+        .para {
+          display: flex;
+          font-weight: 400;
+          font-size: 16px;
+          width: 100%;
+          margin-top: 0%;
+          justify-content: center;
+          text-align: center;
+          line-height: 25px;
+          color: hsl(212, 45%, 89%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="image">
+        <img src="./images/image-qr-code.png" alt="qr-image" class="qr-image" />
+      </div>
+      <div class="texts">
+        <p class="caption">
+          Improve your front-end <br />skills by building projects
+        </p>
+        <p class="para">
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+        </p>
+        <p class="text-mid">to the next level</p>
+      </div>
+    </div>
+  </body>
+</html>
